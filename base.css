@@ -24,6 +24,19 @@ html, body{
     
     background-image: var(--background);
 
+    font-family: var(--nunito);
+
+}
+
+
+
+#content{
+
+    width: 1400px;
+    height: 84%;
+
+    border: 2px solid white;
+
 }
 
 
@@ -35,21 +48,11 @@ html, body{
     align-items: flex-end;
 
     margin: 0;
-    bottom: 20px;
+    bottom: 15px;
     right: 20px;
 
 
 }
-
-#content{
-
-    width: 1400px;
-    height: 84%;
-
-    border: 2px solid white;
-
-}
-
 
 #esquerda{
 
