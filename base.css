@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --background: linear-gradient(45deg, black 30%, rgb(11, 4, 45));
+    --azul-escuro: #2c1d45;
+    --azul-claro: #9386df;
+    --verde-contraste: #40715d;
+    --preto: #1f1f1f;
+    --branco: #fcfcfc;
+    --nunito: 'Nunito Sans', sans-serif;
+    --poppins: 'Montserrat', sans-serif;
+}
+
+
+
+html, body{
+    height: 100vh;
+
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    background-image: var(--background);
+
+}
+
+
+
+.botaos{
+
+    position: fixed;
+    justify-content: flex-end;
+    align-items: flex-end;
+
+    margin: 0;
+    bottom: 20px;
+    right: 20px;
+
+
+}
+
+#content{
+
+    width: 1400px;
+    height: 84%;
+
+    border: 2px solid white;
+
+}
+
+
+#esquerda{
+
+    width: 60px;
+    height: 35px;
+
+    border: 2px solid transparent;
+    border-radius: 10px;
+
+    color: var(--branco);
+    background-color: var(--azul-escuro);
+    background:
+        linear-gradient(var(--azul-escuro), var(--azul-escuro)) padding-box,
+        linear-gradient(to left, var(--azul-escuro) 40%, var(--verde-contraste)) border-box;
+}
+
+#direita{
+
+    width: 60px;
+    height: 35px;
+
+    border: 2px solid transparent;
+    border-radius: 10px;
+
+    color: var(--branco);
+    background-color: var(--azul-escuro);
+    background:
+        linear-gradient(var(--azul-escuro), var(--azul-escuro)) padding-box,
+        linear-gradient(to right, var(--azul-escuro) 40%, var(--verde-contraste)) border-box;
+
+}
