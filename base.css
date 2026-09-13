@@ -63,7 +63,6 @@ html, body{
     border-radius: 10px;
 
     color: var(--branco);
-    background-color: var(--azul-escuro);
     background:
         linear-gradient(var(--azul-escuro), var(--azul-escuro)) padding-box,
         linear-gradient(to left, var(--azul-escuro) 40%, var(--verde-contraste)) border-box;
@@ -78,7 +77,6 @@ html, body{
     border-radius: 10px;
 
     color: var(--branco);
-    background-color: var(--azul-escuro);
     background:
         linear-gradient(var(--azul-escuro), var(--azul-escuro)) padding-box,
         linear-gradient(to right, var(--azul-escuro) 40%, var(--verde-contraste)) border-box;
