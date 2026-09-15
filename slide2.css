@@ -1,0 +1,356 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --background: linear-gradient(45deg, black 30%, rgb(11, 4, 45));
+    --azul-escuro: #2c1d45;
+    --azul-claro: #c3bbf4;
+    --azul: rgb(104, 94, 195);
+    --roxo-contraste: #790cbd;
+    --preto: #1f1f1f;
+    --branco: #fcfcfc;
+    --nunito: 'Nunito Sans', sans-serif;
+    --poppins: 'Montserrat', sans-serif;
+}
+
+
+
+html, body{
+    height: 100vh;
+
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    background-image: var(--background);
+
+    font-family: var(--nunito);
+
+}
+
+
+
+#content{
+
+    width: 1400px;
+    height: 84%;
+
+    color: var(--azul);
+}
+
+
+
+#top{
+
+    display: flex;
+    flex-direction: column;
+
+    margin-left: 100px;
+
+}
+
+#top p{
+
+    color: var(--branco);
+
+    font-size: 30px;
+    font-weight: 300;
+    font-family: var(--poppins);
+
+    margin-top: -40px;
+
+    opacity: 0;
+    animation: fadeIn 0.5s ease-in forwards;
+    animation-delay: 1s;
+
+}
+
+
+#linha1{
+
+    height: 4px;
+    background: linear-gradient(to right,#2200ff, rgb(46, 103, 149), #790cbd);
+    border-radius: 10px;
+    margin-top: 60px !important;
+    margin-left: 10px;
+    position: fixed;
+
+    animation-name: aumentarLargura;
+    animation-delay: 0.7s;
+    animation-duration: 0.5s;
+    animation-timing-function: ease;
+    animation-fill-mode: forwards; 
+
+}
+
+#conceito{
+    font-size: 75px;
+    font-weight: 650;
+    font-family: var(--poppins);
+
+    background-image: linear-gradient(to right, rgb(51, 40, 173), rgb(255, 255, 255));
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+
+    margin-top: 65px;
+    margin-left: 17px;
+
+    animation-name: titulo;
+    animation-duration: 1s;
+    animation-timing-function: ease;
+    animation-fill-mode: forwards;
+
+}
+
+.palavras {
+
+    background-image: linear-gradient(to right, rgb(51, 40, 173), rgb(100, 138, 199));
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+
+    font-weight: 700;
+
+}
+
+
+#meio{
+
+    display: flex;
+    gap: 10;
+
+    margin-left: 100px;
+    margin-top: -10px;
+
+}
+
+#meio h1{
+
+    font-size: 40px;
+    font-weight: 800;
+
+    opacity: 0;
+    animation: fadeIn 0.5s ease-in forwards;
+    animation-delay: 1.2s;
+
+}
+
+#meio p{
+    font-size: 25px;
+    font-weight: 200;
+
+    margin-top: 40px !important;
+    margin-left: 25px;
+
+    opacity: 0;
+    animation: fadeIn 0.5s ease-in forwards;
+    animation-delay: 1.4s;
+
+}
+
+#linha2{
+
+    height: 2px;
+    background: linear-gradient(to right,#2200ff, rgb(46, 103, 149), #790cbd, rgb(11, 4, 45));
+    border-radius: 10px;
+    margin-top: 55px;
+    margin-left: 460px;
+
+    position: fixed;
+
+    
+    animation: aumentarLargura2 1.2s ease forwards;
+    animation-delay: 2s;
+}
+
+
+#low{
+    display: flex;
+    gap: 60px;
+    
+    margin-left: 100px;
+}
+
+#low .icon {
+    width: 120px;
+    height: 120px;
+
+    background: linear-gradient(to right,#2200ff, rgb(46, 103, 149), #790cbd, rgb(11, 4, 45));
+
+    -webkit-mask-image: var(--icon);
+    mask-image: var(--icon);
+
+    -webkit-mask-size: contain;
+    mask-size: contain;
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    -webkit-mask-position: center;
+    mask-position: center;
+}
+
+.item{
+    display: grid;
+    align-items: center;
+    justify-content: center;
+
+    border: 2px solid;
+    border-color: var(--background);
+    border-radius: 20px;
+
+    width: 190px;
+    height: 150px;
+
+}
+
+.item p{
+    color: white;
+
+    margin-top: 40px;
+    margin-left: 20px;
+
+    font-size: 20px;
+    font-weight: 600;
+}
+
+#div1{
+    opacity: 0;
+    animation: fadeIn 0.5s ease-in forwards;
+    animation-delay: 2s;
+}
+#div2{
+    opacity: 0;
+    animation: fadeIn 0.5s ease-in forwards;
+    animation-delay: 2.2s;
+}
+#div3{
+    opacity: 0;
+    animation: fadeIn 0.5s ease-in forwards;
+    animation-delay: 2.4s;
+}
+#div4{
+    opacity: 0;
+    animation: fadeIn 0.5s ease-in forwards;
+    animation-delay: 2.6s;
+}
+#div5{
+    opacity: 0;
+    animation: fadeIn 0.5s ease-in forwards;
+    animation-delay: 2.8s;
+}
+
+
+
+.icon{
+    margin-top: 13px;
+}
+
+#ia{
+    margin-left: 27px;
+    margin-top: 17px;
+}
+#ceguin {
+    margin-left: 13px;
+    margin-top: 18px;
+}
+#pranxota{
+    margin-left: 27px;
+    margin-top: 14px;
+}
+
+
+#ex1{
+    margin-left: 20px;
+}
+#ex2{
+    margin-left: 10px;
+}
+#ex3{
+    margin-left: 2px;
+}
+#ex4{
+    margin-left: 7px;
+}
+#ex5{
+    margin-left: 15px;
+}
+
+.botaos{
+
+    position: fixed;
+    justify-content: flex-end;
+    align-items: flex-end;
+
+    margin: 0;
+    bottom: 15px;
+    right: 20px;
+
+}
+
+#esquerda{
+
+    width: 60px;
+    height: 35px;
+
+    border: 2px solid transparent;
+    border-radius: 10px;
+
+    color: var(--branco);
+    background:
+        linear-gradient(var(--azul-escuro), var(--azul-escuro)) padding-box,
+        linear-gradient(to left, var(--azul-escuro) 40%, var(--roxo-contraste)) border-box;
+}
+
+#direita{
+
+    width: 60px;
+    height: 35px;
+
+    border: 2px solid transparent;
+    border-radius: 10px;
+
+    color: var(--branco);
+    background:
+        linear-gradient(var(--azul-escuro), var(--azul-escuro)) padding-box,
+        linear-gradient(to right, var(--azul-escuro) 40%, var(--roxo-contraste)) border-box;
+
+}
+
+@keyframes titulo {
+    from {
+        width: 0px;
+    }
+    to {
+        width: 347px;
+    }
+}
+
+@keyframes aumentarLargura {
+    from {
+        width: 0px;
+    }
+    to {
+        width: 135px;
+    }
+}
+
+@keyframes aumentarLargura2 {
+    from {
+        width: 0px;
+    }
+    to {
+        width: 720px;
+    }
+}
+
+@keyframes fadeIn{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
