@@ -5,22 +5,22 @@ const left = document.getElementById("esquerda");
 
 //processamentos e funções
 direita.addEventListener("click", function(){
-    window.location.href = "index.html" //muda pro arquivo que for o proximo slide
+    window.location.href = "slide5.html" //muda pro arquivo que for o proximo slide
 });
 
 esquerda.addEventListener("click", function(){
-    window.location.href = "index.html" //muda pro arquivo que for o slide anterior
+    window.location.href = "slide3.html" //muda pro arquivo que for o slide anterior
 });
 
 
 document.addEventListener("keydown", function(event){
     if (event.key === "ArrowRight"){
-        window.location.href = "index.html" //muda pro arquivo que for o proximo slide
+        window.location.href = "slide5.html" //muda pro arquivo que for o proximo slide
     }
 })
 
 document.addEventListener("keydown", function(event){
     if (event.key === "ArrowLeft"){
-        window.location.href = "index.html" //muda pro arquivo que for o slide anterior
+        window.location.href = "slide3.html" //muda pro arquivo que for o slide anterior
     }
 })
