@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --background: linear-gradient(45deg, black 30%, rgb(11, 4, 45));
+    --azul-escuro: #2c1d45;
+    --azul-claro: #c3bbf4;
+    --roxo-contraste: #790cbd;
+    --preto: #1f1f1f;
+    --branco: #fcfcfc;
+    --nunito: 'Nunito Sans', sans-serif;
+    --poppins: 'Montserrat', sans-serif;
+}
+
+
+
+html, body{
+    height: 100vh;
+
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    background-image: var(--background);
+
+    font-family: var(--nunito);
+
+}
+
+
+
+#content{
+
+    position: relative;
+    width: 1400px;
+    height: 84%;
+
+    border: 2px solid white;
+    box-sizing: border-box;
+    overflow: hidden;
+
+}
+
+
+
+.botaos{
+
+    position: fixed;
+    justify-content: flex-end;
+    align-items: flex-end;
+
+    margin: 0;
+    bottom: 15px;
+    right: 20px;
+
+
+}
+
+#esquerda{
+
+    width: 60px;
+    height: 35px;
+
+    border: 2px solid transparent;
+    border-radius: 10px;
+
+    color: var(--branco);
+    background:
+        linear-gradient(var(--azul-escuro), var(--azul-escuro)) padding-box,
+        linear-gradient(to left, var(--azul-escuro) 40%, var(--roxo-contraste)) border-box;
+}
+
+#direita{
+
+    width: 60px;
+    height: 35px;
+
+    border: 2px solid transparent;
+    border-radius: 10px;
+
+    color: var(--branco);
+    background:
+        linear-gradient(var(--azul-escuro), var(--azul-escuro)) padding-box,
+        linear-gradient(to right, var(--azul-escuro) 40%, var(--roxo-contraste)) border-box;
+
+}
+
+#top{
+    margin-top: 40px;
+    margin-left: 80px;
+}
+
+#Analogia{
+    font-size: 70px;
+    font-weight: 650;
+    font-family: var(--poppins);
+
+    background-image: linear-gradient(to right, rgb(51, 40, 173), rgb(255, 255, 255));
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+
+    margin: 0;
+}
+
+#top p{
+
+    color: var(--branco);
+
+    font-size: 28px;
+    font-weight: 300;
+    font-family: var(--poppins);
+    margin: 10px 0 0 0;
+
+    opacity: 0;
+    animation: fadeIn 0.5s ease-in forwards;
+    animation-delay: 0.5s;
+
+}
+
+.destaque {
+
+    color: var(--branco);
+    -webkit-text-fill-color: var(--branco);
+    font-weight: 700;
+
+}
+
+#base {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 25px;
+    margin-top: 35px;
+    margin-left: 80px;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+
+    border: 2px solid rgba(255, 255, 255, 0.25);
+    background: rgba(255, 255, 255, 0.04);
+    border-radius: 20px;
+    padding: 24px 35px;
+
+    width: 620px;
+    box-sizing: border-box;
+
+    backdrop-filter: blur(8px);
+    transition: transform 0.2s ease, border-color 0.2s ease;
+}
+
+.card:hover {
+    border-color: rgba(255, 255, 255, 0.45);
+    transform: translateY(-3px);
+}
+
+.card h2{
+    color: var(--branco);
+    font-family: var(--poppins);
+    font-size: 26px;
+    font-weight: 700;
+    margin: 0;
+}
+
+.card p{
+    color: var(--branco);
+    font-family: var(--nunito);
+    font-size: 19px;
+    font-weight: 400;
+    line-height: 1.4;
+    margin: 0;
+}
+
+.card p span{
+    color: var(--branco);
+    font-size: 20px;
+    font-weight: 600;
+    font-style: italic;
+    display: block;
+}
+
+#imagem-fundo{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+    pointer-events: none;
+}
+
+@keyframes fadeIn{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
