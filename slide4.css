@@ -87,12 +87,11 @@ html, body{
 }
 
 #top{
-    margin-top: 40px;
     margin-left: 80px;
 }
 
 #Analogia{
-    font-size: 70px;
+    font-size: 75px;
     font-weight: 650;
     font-family: var(--poppins);
 
@@ -102,7 +101,8 @@ html, body{
     -webkit-text-fill-color: transparent;
     color: transparent;
 
-    margin: 0;
+    margin-top: 65px;
+    margin-bottom: 0;
 }
 
 #top p{
@@ -133,7 +133,7 @@ html, body{
     flex-direction: column;
     align-items: flex-start;
     gap: 30px;
-    margin-top: 150px;
+    margin-top: 100px;
     margin-left: 80px;
 }
 
