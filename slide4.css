@@ -161,7 +161,12 @@ html, body{
 }
 
 .card h2{
-    color: var(--branco);
+    width: fit-content;
+    background-image: linear-gradient(to right, rgb(51, 40, 173), rgb(100, 138, 199));
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
     font-family: var(--poppins);
     font-size: 26px;
     font-weight: 700;
