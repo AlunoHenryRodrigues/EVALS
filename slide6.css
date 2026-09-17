@@ -1,0 +1,291 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --background: linear-gradient(45deg, black 30%, rgb(11, 4, 45));
+    --azul-escuro: #2c1d45;
+    --azul-claro: #c3bbf4;
+    --azul: rgb(104, 94, 195);
+    --roxo-contraste: #790cbd;
+    --preto: #1f1f1f;
+    --branco: #fcfcfc;
+    --vermelho-alerta: #ff4d4d;
+    --nunito: 'Nunito Sans', sans-serif;
+    --poppins: 'Montserrat', sans-serif;
+}
+
+html, body {
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: var(--background);
+    font-family: var(--nunito);
+}
+
+#content {
+    width: 1400px;
+    height: 84%;
+    color: var(--azul);
+}
+
+#top {
+    display: flex;
+    flex-direction: column;
+    margin-left: 100px;
+}
+
+#top p {
+    color: var(--branco);
+    font-size: 30px;
+    font-weight: 300;
+    font-family: var(--poppins);
+    margin-top: -40px;
+    opacity: 0;
+    animation: fadeIn 0.5s ease-in forwards;
+    animation-delay: 1s;
+}
+
+#linha1 {
+    height: 4px;
+    background: linear-gradient(to right, #2200ff, rgb(46, 103, 149), #790cbd);
+    border-radius: 10px;
+    margin-top: 60px !important;
+    margin-left: 10px;
+    position: fixed;
+    animation-name: aumentarLargura;
+    animation-delay: 0.7s;
+    animation-duration: 0.5s;
+    animation-timing-function: ease;
+    animation-fill-mode: forwards;
+}
+
+#titulo {
+    font-size: 75px;
+    font-weight: 650;
+    font-family: var(--poppins);
+    background-image: linear-gradient(to right, rgb(51, 40, 173), rgb(255, 255, 255));
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+    margin-top: 65px;
+    margin-left: 17px;
+    animation-name: titulo;
+    animation-duration: 1.5s;
+    animation-timing-function: ease;
+    animation-fill-mode: forwards;
+}
+
+#meio {
+    display: flex;
+    gap: 40px;
+    margin-left: 100px;
+    margin-top: -10px;
+}
+
+.subtitulo {
+    font-family: var(--poppins);
+    font-size: 28px;
+    color: var(--azul-claro);
+    margin-bottom: 15px;
+}
+
+/* Coluna Esquerda - Limitações */
+#left {
+    width: 550px;
+    opacity: 0;
+    animation: fadeIn 0.5s ease-in forwards;
+    animation-delay: 1.2s;
+}
+
+.cards-limitacoes {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.card-item {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    background-color: var(--azul-escuro);
+    border: 2px solid var(--roxo-contraste);
+    border-radius: 20px;
+    padding: 15px 20px;
+}
+
+.card-icon {
+    font-size: 35px;
+}
+
+.card-text h3 {
+    margin: 0;
+    font-size: 22px;
+    font-family: var(--poppins);
+    color: var(--branco);
+}
+
+.card-text p {
+    margin: 5px 0 0 0;
+    font-size: 16px;
+    color: var(--azul-claro);
+}
+
+/* Coluna Direita - Pergunta & Resposta */
+#right {
+    width: 550px;
+    opacity: 0;
+    animation: fadeIn 0.5s ease-in forwards;
+    animation-delay: 1.6s;
+}
+
+.card-pergunta {
+    border: 2px solid var(--azul);
+    border-radius: 30px;
+    padding: 25px;
+    background: rgba(11, 4, 45, 0.6);
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.pergunta-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.pergunta-header h3 {
+    margin: 0;
+    font-family: var(--poppins);
+    font-size: 24px;
+    color: var(--azul-claro);
+}
+
+.icon-q {
+    font-size: 28px;
+}
+
+.txt-pergunta {
+    font-family: var(--poppins);
+    font-size: 22px;
+    font-weight: 600;
+    color: var(--branco);
+    margin: 0;
+    line-height: 1.4;
+}
+
+.resposta-box {
+    margin-top: 10px;
+    border-top: 1px solid var(--roxo-contraste);
+    padding-top: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.badge-nao {
+    font-family: var(--poppins);
+    font-size: 32px;
+    font-weight: 900;
+    color: var(--vermelho-alerta);
+    letter-spacing: 2px;
+}
+
+.txt-resposta {
+    font-family: var(--poppins);
+    font-size: 18px;
+    color: var(--branco);
+    margin: 0;
+    line-height: 1.4;
+}
+
+/* Botões */
+.botaos {
+    position: fixed;
+    justify-content: flex-end;
+    align-items: flex-end;
+    margin: 0;
+    bottom: 15px;
+    right: 20px;
+}
+
+#esquerda {
+    width: 60px;
+    height: 35px;
+    border: 2px solid transparent;
+    border-radius: 10px;
+    color: var(--branco);
+    background:
+        linear-gradient(var(--azul-escuro), var(--azul-escuro)) padding-box,
+        linear-gradient(to left, var(--azul-escuro) 40%, var(--roxo-contraste)) border-box;
+    cursor: pointer;
+}
+
+#direita {
+    width: 60px;
+    height: 35px;
+    border: 2px solid transparent;
+    border-radius: 10px;
+    color: var(--branco);
+    background:
+        linear-gradient(var(--azul-escuro), var(--azul-escuro)) padding-box,
+        linear-gradient(to right, var(--azul-escuro) 40%, var(--roxo-contraste)) border-box;
+    cursor: pointer;
+}
+
+/* Fonte no rodapé */
+.fonte-slide {
+    position: fixed;
+    bottom: 15px;
+    left: 25px;
+    font-size: 11px;
+    font-family: var(--poppins);
+    color: rgba(195, 187, 244, 0.5);
+    z-index: 10;
+    max-width: 60%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.fonte-slide a {
+    color: rgba(195, 187, 244, 0.65);
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.fonte-slide a:hover {
+    color: var(--branco);
+    text-decoration: underline;
+}
+
+/* Animações */
+@keyframes titulo {
+    from {
+        width: 0px;
+    }
+    to {
+        width: 450px;
+    }
+}
+
+@keyframes aumentarLargura {
+    from {
+        width: 0px;
+    }
+    to {
+        width: 135px;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
