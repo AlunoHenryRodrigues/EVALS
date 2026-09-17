@@ -236,6 +236,32 @@ html, body {
     cursor: pointer;
 }
 
+/* Fonte no rodapé */
+.fonte-slide {
+    position: fixed;
+    bottom: 15px;
+    left: 25px;
+    font-size: 11px;
+    font-family: var(--poppins);
+    color: rgba(195, 187, 244, 0.5);
+    z-index: 10;
+    max-width: 60%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.fonte-slide a {
+    color: rgba(195, 187, 244, 0.65);
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.fonte-slide a:hover {
+    color: var(--branco);
+    text-decoration: underline;
+}
+
 /* Animações */
 @keyframes titulo {
     from {
