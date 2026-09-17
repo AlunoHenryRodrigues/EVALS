@@ -43,6 +43,9 @@ html, body{
     box-sizing: border-box;
     overflow: hidden;
 
+    margin-top: -5px;
+    margin-left: 85px;
+    
 }
 
 
@@ -89,6 +92,24 @@ html, body{
 
 }
 
+
+#linha1{
+
+    height: 4px;
+    background: linear-gradient(to right,#2200ff, rgb(46, 103, 149), #790cbd);
+    border-radius: 10px;
+    margin-top: 0px !important;
+    margin-left: -10px;
+    position: fixed;
+
+    animation-name: aumentarLargura;
+    animation-delay: 0.7s;
+    animation-duration: 0.5s;
+    animation-timing-function: ease;
+    animation-fill-mode: forwards; 
+
+}
+
 #top{
     margin-left: 80px;
 }
@@ -106,6 +127,11 @@ html, body{
 
     margin-top: 65px;
     margin-bottom: 0;
+
+    animation-name: titulo;
+    animation-duration: 2s;
+    animation-timing-function: ease;
+    animation-fill-mode: forwards;
 }
 
 #top p{
@@ -119,14 +145,17 @@ html, body{
 
     opacity: 0;
     animation: fadeIn 0.5s ease-in forwards;
-    animation-delay: 0.5s;
+    animation-delay: 1s;
 
 }
 
 .destaque {
 
-    color: var(--branco);
-    -webkit-text-fill-color: var(--branco);
+    background-image: linear-gradient(to right, rgb(51, 40, 173), rgb(255, 255, 255));
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
     font-weight: 700;
 
 }
@@ -154,8 +183,7 @@ html, body{
     width: 620px;
     box-sizing: border-box;
 
-    backdrop-filter: blur(8px);
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    background-color: black;
 }
 
 .card::before {
@@ -232,6 +260,56 @@ html, body{
     display: block;
 }
 
+
+#card1{
+    opacity: 0;
+    animation: fadeIn 0.5s ease-in forwards;
+    animation-delay: 1.6s;
+}
+
+#card2{
+    opacity: 0;
+    animation: fadeIn 0.5s ease-in forwards;
+    animation-delay: 1.8s;
+}
+
+@keyframes fadeIn{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+
+
+@keyframes titulo {
+    from {
+        width: 0px;
+    }
+    to {
+        width: 650px;
+    }
+}
+
+@keyframes aumentarLargura {
+    from {
+        width: 0px;
+    }
+    to {
+        width: 135px;
+    }
+}
+
+@keyframes aumentarLargura2 {
+    from {
+        width: 0px;
+    }
+    to {
+        width: 720px;
+    }
+}
 
 @keyframes fadeIn{
     from{
